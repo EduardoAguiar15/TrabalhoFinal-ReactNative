@@ -1,24 +1,70 @@
 # TrabalhoFinal-ReactNative
 
-instalações dependências:
+https://github.com/user-attachments/assets/c7dec39e-e5e7-4da1-be23-c62ac80060ad
 
-Assync -> npx expo install @react-native-async-storage/async-storage
+## 📖 Sobre o projeto:
+Projeto desenvolvido durante o curso de **Desenvolvimento de Software** pelo **Parque Tecnológico SERRATEC**, na disciplina de **Desenvolvimento Mobile**. O objetivo foi criar um aplicativo que simula uma **rede de filmes**, consumindo dados de uma API e exibindo informações categorizadas por gênero, descrição e classificação.
 
-Navigation -> npm install @react-navigation/native npx expo install react-native-screens react-native-safe-area-context npm install @react-navigation/native-stack
+## 🚀 Tecnologias utilizadas:
+- **React Native**
+  
+- **TypeScript**
+  
+- **Bottom Tabs Navigator**
+  
+- **Async Storage**
+  
+- **JSON Server**
+  
+- **DB JSON (simulação de banco de dados)**
 
-Axios -> npm install axios
+## 📂 Funcionalidades
+- **Listagem de filmes com informações de gênero, descrição e classificação**
 
-Bottom Tabs Navigator -> npm install @react-navigation/bottom-tabs
+- **Navegação entre telas com Stack Navigation e Bottom Tabs**
 
-Json Server -> npm install -g json-server
+- **Consumo de API de filmes**
 
-Ionicons -> npm install --save react-native-vector-icons
+- **Simulação de backend com JSON Server e db.json**
 
--------------------
+- **Armazenamento local com Async Storage**
 
-para rodar o projeto --> npm install e npx expo start
-para rodar o Json Server --> npx json-server --host 0.0.0.0 db.json
+## ⚙️ Como rodar:
 
-Obs: Na pasta Services/apiUser/api.tsx, trocar a url a partir do Endereço IPv4 da sua máquina (rodar o comando ipconfig no CMD e pegar o número do Endereço IPv4)
-Ex: const url = "http://{Endereço IPv4}:3000/usuarios";
+- **Instalar o Expo CLI globalmente (necessário para React Native com Expo):**
+```bash
+npm install -g expo-cli
+```
 
+- **Clonar o repositório:**
+```bash
+git clone https://github.com/EduardoAguiar15/TrabalhoFinal-ReactNative.git
+```
+
+- **Instalar JSON Server globalmente:**
+```bash
+npm install -g json-server
+```
+
+- **Instalar dependências (dentro de TrabalhoFinal-ReactNative):**
+```bash
+npm install
+```
+
+- **Descobrir o IP da máquina:**
+```bash
+ipconfig
+```
+Procure por algo como: ***Endereço IPv4 . . . . . . . : 192.168.0.15***
+
+- **Alterar a URL da API:**
+Na pasta: ***Services/apiUser/api.tsx***, trocar a url a partir do Endereço IPv4 da sua máquina. EX: ***const url = "http://192.168.0.15:3000/usuarios";***
+
+- **Rodar o JSON Server (dentro de TrabalhoFinal-ReactNative):**
+```bash
+npx json-server --host 0.0.0.0 db.json
+```
+- **Abra OUTRO terminal e rode (sem fechar o outro CMD):**
+```bash
+npx expo start
+```

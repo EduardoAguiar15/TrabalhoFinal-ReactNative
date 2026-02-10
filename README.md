@@ -57,8 +57,11 @@ ipconfig
 ```
 Procure por algo como: ***Endereço IPv4 . . . . . . . : 192.168.0.15***
 
-- **Alterar a URL da API:**  
-Na pasta: ***Services/apiUser/api.tsx***, trocar a url a partir do Endereço IPv4 da sua máquina. EX: ***const url = "http://192.168.0.15:3000/usuarios";***
+- **Alterar a URL da API:**
+
+Na pasta: ***Services/apiUser/api.tsx***, trocar a url a partir do Endereço IPv4 da sua máquina.
+
+EX: ***const url = "http://192.168.0.15:3000/usuarios";***
 
 - **Rodar o JSON Server (dentro de TrabalhoFinal-ReactNative):**
 ```bash
